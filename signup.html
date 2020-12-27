@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<title>BioSolutions</title>
+
+<head>
+
+
+<!-- custom-theme -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="SubLime Signup Form web template Responsive, Login form web template,Flat Pricing tables,Flat Drop downs  Sign up Web Templates, Flat Web Templates, Login sign up Responsive web template, SmartPhone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //custom-theme -->
+<script type="text/javascript" src="D:\Files\ELECTRICAL ENGINEERING\3 Ετος\Τεχνολογίες Διαδικτύου\Εργαστήριο\BioSolutions\js\jquery-1.min.js"></script>
+<link href="D:\Files\ELECTRICAL ENGINEERING\3 Ετος\Τεχνολογίες Διαδικτύου\Εργαστήριο\BioSolution\css\style1.css" rel="stylesheet" type="text/css" media="all" />
+<link href="D:\Files\ELECTRICAL ENGINEERING\3 Ετος\Τεχνολογίες Διαδικτύου\Εργαστήριο\BioSolutions\css\popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+<link href="//fonts.googleapis.com/css?family=Federo" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Alegreya+Sans+SC:100,100i,300,400,400i,500,500i,700,700i,800,800i,900,900i" rel="stylesheet">
+</head>
+<body>
+	<div class="bg" data-vide-bg="video/laptop">
+		<div class="center-container">
+		<h1 class="agile-head text-center">BioSolutions User Signup</h1>
+		<div class="container">
+			<div class="form_w3layouts">
+				<div class="w3layouts-title">
+					<h2 class="w3ls-left">create an account</h2>
+					<a class="w3_play_icon1" href="#small-dialog1">sign in</a>
+				<div class="clear"></div>
+				</div>
+				<form action="signup.php" method="post" class="w3_agile_login">
+				  <p>Firstname</p>
+				    <input type="text" name="name" required="required">
+				    <span class="error">* <?php echo $nameErr;?></span>
+				    <p>Lastname</p>
+				    <input type="text" name="surname" required="required">
+					<span class="error">* <?php echo $surnameErr;?></span>
+				    <p>Email</p>
+				    <input type="text" name="email" required="required">
+					<span class="error">* <?php echo $emailErr;?></span>
+				    <p>Password</p>
+				    <input type="password" name="password" id="password1"  required="required">
+					<span class="error">* <?php echo $passwordErr;?></span>
+					<p>Credit Card No</p>
+					<input type="text" name="creditcard">
+					<span class="error"><?php echo $creditcardErr;?></span>
+					<p>Gender</p>
+					<input type="radio" name="gender" value="female"> Female<br>
+					<input type="radio" name="gender" value="male"> Male<br>
+					<input type="radio" name="gender" value="undefined"> Undefined
+					<span class="error">* <?php echo $genderErr;?></span>
+					<br><br>
+				    <div class="w3_agile_login">
+						<input type="submit" value="Sign up" name="submit">
+					</div>
+				</form>
+			</div>
+		</div>
+		<div id="small-dialog1" class="mfp-hide">
+				<div class="contact-form1">
+						<h3 class="w3ls-left">sign in </h3>
+						<form action="login.php" method="post" class="w3_agile_login">
+							<p>Email</p>
+							<input type="email" name="email" class="email" placeholder="your mail" required="">
+							 <p>Password</p>
+							<input type="password" name="password" class="password" placeholder="your password" required="">
+							<div class="w3_agile_login">
+								<input type="submit" value="sign in">
+							</div>
+						</form>
+				</div>
+		</div>
+		<div class="agileits-w3layouts-copyright text-center">
+			<p>© 2019 &nbsp;BioSolutions. All rights reserved.<a href="//w3layouts.com/">Alexandros Kalafatelis</a></p>
+		</div>
+	</div>
+	</div>
+	<!-- pop-up-box -->
+		<script src="D:\Files\ELECTRICAL ENGINEERING\3 Ετος\Τεχνολογίες Διαδικτύου\Εργαστήριο\BioSolutions\js\jquery.magnific-popup.js" type="text/javascript"></script>
+	<!--//pop-up-box -->
+	<script>
+		$(document).ready(function() {
+		$('.w3_play_icon,.w3_play_icon1,.w3_play_icon2').magnificPopup({
+			type: 'inline',
+			fixedContentPos: false,
+			fixedBgPos: true,
+			overflowY: 'auto',
+			closeBtnInside: true,
+			preloader: false,
+			midClick: true,
+			removalDelay: 300,
+			mainClass: 'my-mfp-zoom-in'
+		});
+		});
+	</script>
+	<script src="D:\Files\ELECTRICAL ENGINEERING\3 Ετος\Τεχνολογίες Διαδικτύου\Εργαστήριο\BioSolutions\js\jquery.vide.min.js"></script>
+</body>
+</html>

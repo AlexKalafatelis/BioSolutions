@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<title>BioSolutions</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url("D:/Files/ELECTRICAL ENGINEERING/3 Ετος/Τεχνολογίες Διαδικτύου/Εργαστήριο/BioSolutions/pics/20.jpeg");
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("D:/Files/ELECTRICAL ENGINEERING/3 Ετος/Τεχνολογίες Διαδικτύου/Εργαστήριο/BioSolutions/pics/19.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/w3images/parallax3.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+<body>
+
+  <!-- header -->
+
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="household.html" class="w3-bar-item w3-button"> HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-globe"></i> ABOUT THE COMPANY</a>
+    <a href="products.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PRODUCTS</a>
+    <a href="mail.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT US</a>
+    <a href="signup.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i>Sign Up/In</a>
+    <a href="comingsoon.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-"></i>Google Partnership</a>
+
+
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Welcome <span class="w3-hide-small">To</span> BioSolutions</span>
+  </div>
+</div>
+<!--Na ftiaxo edo to section se alles selides----------->
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">BioSolutions</h3>
+  <p class="w3-center"><em>Not Just a Biotech Company </em></p>
+  <p>BioSolutions was founded by Alexandros Kalafatelis in 2019.
+  </p>
+  <p> We are a Greek company based at Psachna, Evia and we specialize in the sections of research and development of in vitro diagnostic products for clinical applications.
+  Our products are accredited by ISO.</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i></b></p><br>
+      <img src="D:/Files/ELECTRICAL ENGINEERING/3 Ετος/Τεχνολογίες Διαδικτύου/Εργαστήριο/BioSolutions/pics/3.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+
+      <h3 class="w3-center">Alexandros Kalafatelis Founder, CEO</h3>
+
+        <p>
+        Alexandros Kalafatelis founded BioSolutions in 2019 while studying for his degree at the University of Athens (NKUA), using the research facilities of the university and from getting meaningfull advices from his college proffesors.  His background can be described as diverse, because he holds a degree in Biomedical Sciences (Hons) from the University of East London and he is about to receive his second bachelors degree(BSc) in Electrical Engineering from the University of Athens.
+        Currently, he also works as a Biologist at the Metropolitan Hospital in Athens, supervising the laboratories of Hematology and Microbiology.
+      </p>
+      <p> Apart from his great academic achievements, he is also political active. In 2019 we was chosen as a Member of the Hellenic Student Parliament.
+      </p>
+      <p> His goal is to merge healthcare and engineering.
+      </p>
+    </div>
+
+
+
+</div>
+  <p class="w3-large w3-center w3-padding-16">Our work can be quantified as:</p>
+  <p class="w3-wide"><i class="fa fa-camera"></i>Scientific Research</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:80%">70%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>Diagnostic Products</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:35%">25%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-photo"></i>Advertizing</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:10%">5%</div>
+  </div>
+</div>
+
+<div>
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">500+</span><br>
+    Partners from all over the world
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">1600+</span><br>
+    Projects Done
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">170+</span><br>
+    Our Research Publications
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">23000+</span><br>
+    Mentioned at research articles
+  </div>
+</div>
+</div>
+<!-- Second Parallax Image with Facilities Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+
+  <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Facilities <span class="w3-hide-small"></span></span>
+</div>
+</div>
+
+<!-- Container (Facilities Section) -->
+<div class="w3-content w3-container w3-padding-64" id="Facilities">
+  <h3 class="w3-center">Our HQ</h3>
+  <p class="w3-center"><em>Our headquarters are at Psachna, near the University of Athens. We currently have 10 research labs in the fields of Microbiology(Clinical), Biochemistry, Hematology and Molecular & Cancer Biology.<br>We also have 2 lecture halls for our weekly seminars, in which students from the University of Athens also attend.  </em></p><br>
+
+
+
+  <!-- Automated Slideshow -->
+
+
+
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  * {box-sizing: border-box;}
+  body {font-family: Verdana, sans-serif;}
+  .mySlides {display: none;}
+  img {vertical-align: middle;}
+
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+  </style>
+  </head>
+  <body>
+
+
+
+  <div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 8</div>
+    <img src="D:/Files/ELECTRICAL ENGINEERING/3 Ετος/Τεχνολογίες Διαδικτύου/Εργαστήριο/BioSolutions/pics/11.jpg" style="width:100%">
+    <div class="text">Offices</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 8</div>
+    <img src="D:/Files/ELECTRICAL ENGINEERING/3 Ετος/Τεχνολογίες Διαδικτύου/Εργαστήριο/BioSolutions/pics/12.jpg" style="width:100%">
+    <div class="text">Entrance</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 8</div>
+    <img src="D:/Files/ELECTRICAL ENGINEERING/3 Ετος/Τεχνολογίες Διαδικτύου/Εργαστήριο/BioSolutions/pics/13.jpg" style="width:100%">
+    <div class="text">Outside</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 8</div>
+    <img src="D:/Files/ELECTRICAL ENGINEERING/3 Ετος/Τεχνολογίες Διαδικτύου/Εργαστήριο/BioSolutions/pics/14.jpg" style="width:100%">
+    <div class="text">CS Lab</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 8</div>
+    <img src="D:/Files/ELECTRICAL ENGINEERING/3 Ετος/Τεχνολογίες Διαδικτύου/Εργαστήριο/BioSolutions/pics/15.jpg" style="width:100%">
+    <div class="text">Workspace</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 8</div>
+    <img src="D:/Files/ELECTRICAL ENGINEERING/3 Ετος/Τεχνολογίες Διαδικτύου/Εργαστήριο/BioSolutions/pics/16.jpg" style="width:100%">
+    <div class="text">Lecture Hall</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">7 / 8</div>
+    <img src="D:/Files/ELECTRICAL ENGINEERING/3 Ετος/Τεχνολογίες Διαδικτύου/Εργαστήριο/BioSolutions/pics/17.jpg" style="width:100%">
+    <div class="text">Offices</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">8 / 8</div>
+    <img src="D:/Files/ELECTRICAL ENGINEERING/3 Ετος/Τεχνολογίες Διαδικτύου/Εργαστήριο/BioSolutions/pics/18.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+  <script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000); // Change image every 5 seconds
+  }
+  </script>
+
+  </body>
+
+</div>
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.facebook.com/AlexanderKalafatelis" title="W" target="_blank" class="w3-hover-text-green">Alexandros Kalafatelis</a></p>
+</footer>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+</body>
+</html>
