@@ -1,4 +1,6 @@
 # BioSolutions
+A Biotech inspired website. 
+
 A project i created  for one of my classes using HTML, CSS, JS &amp; PHP.
 
 Contains checkout forms, login/sign in pages, a coming soon page, household & Products page 
